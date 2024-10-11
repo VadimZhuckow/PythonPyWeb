@@ -10,7 +10,7 @@
         "middle_name": "Админович",
         "gender": "м",
         "self_esteem": "5.0",
-        "phone_number": "+79123456789",
+        "phone_number": "+79123456709",
         "city": "Мой город",
         "bio": "Быть админом тяжело",
         "age": 43,
@@ -49,7 +49,7 @@
     "fields": {
         "username": "user",
         "email": "user@user.ru",
-        "first_name": null,
+        "first_name": "user2",
         "last_name": null,
         "middle_name": null,
         "gender": null,
@@ -91,7 +91,7 @@
     "model": "db_train.author",
     "pk": 5,
     "fields": {
-        "username": "user2",
+        "username": "user3",
         "email": "user2@user.ru",
         "first_name": "Маргарита",
         "last_name": "Марго",
@@ -113,7 +113,7 @@
     "model": "db_train.author",
     "pk": 6,
     "fields": {
-        "username": "user3",
+        "username": "user4",
         "email": "user3@user.ru",
         "first_name": "Андрей",
         "last_name": "Андреев",
@@ -135,9 +135,9 @@
     "model": "db_train.author",
     "pk": 7,
     "fields": {
-        "username": "user4",
+        "username": "user5",
         "email": "user4@user.com",
-        "first_name": null,
+        "first_name": "user10",
         "last_name": null,
         "middle_name": null,
         "gender": null,
@@ -157,7 +157,7 @@
     "model": "db_train.author",
     "pk": 8,
     "fields": {
-        "username": "user5",
+        "username": "user6",
         "email": "user5@user.com",
         "first_name": "Анна",
         "last_name": "Романова",
@@ -179,7 +179,7 @@
     "model": "db_train.author",
     "pk": 9,
     "fields": {
-        "username": "user6",
+        "username": "user7",
         "email": "user6@test.com",
         "first_name": "Виктория",
         "last_name": null,
@@ -201,9 +201,9 @@
     "model": "db_train.author",
     "pk": 10,
     "fields": {
-        "username": "user7",
+        "username": "user8",
         "email": "user7@test.com",
-        "first_name": null,
+        "first_name": "user1",
         "last_name": null,
         "middle_name": null,
         "gender": "м",
@@ -223,7 +223,7 @@
     "model": "db_train.author",
     "pk": 11,
     "fields": {
-        "username": "user8",
+        "username": "user9",
         "email": "user8@test.com",
         "first_name": "Алла",
         "last_name": "Иванова",
