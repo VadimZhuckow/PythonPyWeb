@@ -275,7 +275,7 @@
     "fields": {
         "username": "user",
         "email": "user@user.ru",
-        "first_name": null,
+        "first_name": "Админ",
         "last_name": null,
         "middle_name": null,
         "gender": null,
@@ -363,7 +363,7 @@
     "fields": {
         "username": "user4",
         "email": "user4@user.com",
-        "first_name": null,
+        "first_name": "Админ",
         "last_name": null,
         "middle_name": null,
         "gender": null,
@@ -429,7 +429,7 @@
     "fields": {
         "username": "user7",
         "email": "user7@test.com",
-        "first_name": null,
+        "first_name": "Админ",
         "last_name": null,
         "middle_name": null,
         "gender": "м",
