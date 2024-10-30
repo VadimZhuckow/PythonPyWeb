@@ -10,11 +10,26 @@ if __name__ == "__main__":
     from rest_framework import serializers
     from apps.db_train_alternative.models import Author
 
+
     # Сериализатор
     class AuthorSerializer(serializers.Serializer):
         id = serializers.IntegerField(read_only=True)
         name = serializers.CharField(max_length=200)
         email = serializers.EmailField()
+
+        def create(self, validated_data):
+            return Author.objects.create(**validated_data)
+
+
+    def update(self, instance, validated_data):
+        """
+        Обновить и вернуть существующий объект Author на основе предоставленных проверенных данных.
+        """
+        instance.name = validated_data.get('name', instance.name)
+        instance.email = validated_data.get('email', instance.email)
+        instance.save()
+        return instance
+
 
     # _____________________________________________________________________________________
     # Сериализация (Модель трансформируется в словарь который потом станет Json объектом)
@@ -34,7 +49,7 @@ if __name__ == "__main__":
 
     # Десериализация (Json объект (словарь) трансформируется в Модель и сохраняется в БД)
 
-    json_data = {'name': 'John', 'email': 'john@example'}  # с ошибкой в поле email
+    json_data = {'name': 'Jo21h1n', 'email': 'jo2h21n@example'}  # с ошибкой в поле email
 
     serializer = AuthorSerializer(data=json_data)
     # Проверка валидности данных
@@ -46,9 +61,7 @@ if __name__ == "__main__":
         print("Ошибка")
         print(serializer.errors)
 
-
-
-    json_data = {'name': 'John', 'email': 'john@example.com'}
+    json_data = {'name': 'Joh21n', 'email': 'j212ohn@example.com'}
 
     serializer = AuthorSerializer(data=json_data)
     # Проверка валидности данных
