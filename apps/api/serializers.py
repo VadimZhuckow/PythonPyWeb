@@ -22,7 +22,8 @@ class AuthorSerializer(serializers.Serializer):
         instance.save()
         return instance
 
+
 class AuthorModelSerializer(serializers.ModelSerializer):
-        class Meta:
-            model = Author
-            fields = ['id', 'name', 'email']
+    class Meta:
+        model = Author
+        fields = ['id', 'name', 'email']
