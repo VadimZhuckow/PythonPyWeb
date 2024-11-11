@@ -19,6 +19,7 @@ from rest_framework import permissions
 
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 class AuthorAPIView(APIView):
@@ -109,7 +110,9 @@ class AuthorGenericAPIView(GenericAPIView, RetrieveModelMixin, ListModelMixin, C
     queryset = Author.objects.all()
     serializer_class = AuthorModelSerializer
 
-    permission_classes = [CustomPermission]
+    permission_classes = [permissions.IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
     def get(self, request, *args, **kwargs):
         if kwargs.get(self.lookup_field):
             try:
